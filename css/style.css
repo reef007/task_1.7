@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {font-family: "微软雅黑";font-size: 12px;margin: 0;padding: 0}
+table {border-collapse: collapse;border-spacing: 0}
+img {border: 0;}
+ol, ul {list-style: none}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: normal}
+a {text-decoration: none}
+.clr {clear: both}
+
+body{width:100%;}
+/*以上为防止兼容性问题及其他全体声明*/
+.header{width:100%;height:56px;font-family:"微软雅黑";min-width:1280px;}/*为什么宽度设为百分百，右侧有空白*/
+.header .logo{width:122px;height:56px;float:left;margin-left:54px;padding-top:10px;}
+.header .user{width:126px;height:56px;float:right;line-height:56px;}
+.header .user a{width:126px;height:56px;font-size:14px;color:#e74f4d;line-height:56px;margin-left:3px;}
+.header .banner{width:465px;height:53px;float:right;margin-right:18px;}
+.header .banner ul li{float:left;text-align:center;width:93px;height:53px;line-height:53px;}
+.header .banner ul li a{font-family:"微软雅黑";font-size:14px;color:#787b83;text-align:center;width:60px;height:53px;line-height:53px;display:block;}
+.header .banner ul li a:hover{border-bottom:3px solid #e74f4d;color:#e74f4d;}
+/*头部完成*/
+.section1{width:100%;height:283px;min-width:1280px;background:url(../images/task_1_7_1_11.png) no-repeat;background-size:cover;padding:228px 0 180px 0px;font-family:"微软雅黑";color:#FFF; }
+.section1 p:nth-child(1){font-size:60px;margin-bottom:10px;font-family:"微软雅黑";margin-left:115px;}/*为什么div上设置了字体类型，在它内部其他标签里的文字不起作用呢,原因是css有直接作用在p标签的样式，而继承父类优先级低，所以父类的被css头部的样式覆盖掉了*/
+.section1 p:nth-child(2){font-size:21px;height:30px;line-height:30px;font-family:"微软雅黑";margin-left:115px;}
+.section1 p:nth-child(3){font-size:21px;height:35px;line-height:35px;font-family:"微软雅黑";margin-left:115px;}
+.section1 .btn1{width:330px;height:65px;margin-top:66px;background:#e74f4d;text-align:center;line-height:65px;font-size:30px;font-family:"微软雅黑";cursor:pointer;margin-left:115px;}
+
+.section2{width:100%;height:250px;min-width:1280px;padding-top:40px;}
+.section2 ul li{width:25%;height:250px;float:left;text-align:center;position:relative;}
+.section2 ul li img{margin-bottom:42px;}
+.section2 ul li p:nth-child(2),.section2 ul li p:nth-child(3){font-size:14px;font-family:"黑体";color:#767777;margin-right:2px;}
+.section2 ul li span{display:inline-block;color:#b5b8b8;position:absolute;top:80px;right:0px;font-size:40px;}
+
+.section3{width:100%;height:360px;min-width:1280px;background:#ededec;text-align:center;padding-top:85px;}
+.section3 p{padding-top:45px;text-align:center;font-family:"黑体";font-size:53.59px;color:#867e7a;}
+
+.section4{width:100%;height:292px;min-width:1280px;background:url(../images/task_1_7_1_32.png) no-repeat 0 0;background-size:100% 340px;padding-top:48px;}
+.section4 p{color:#FFF;text-align:center;}
+.section4 p:nth-child(1){font-size:21px;height:33px;line-height:33px;}
+.section4 p:nth-child(2){font-weight:bold;font-size:18px;}
+.section4 p:nth-child(3){font-size:12px;height:33px;line-height:33px;}
+.section4 .selt{width:1033px;height:78px;margin:0 auto;padding-top:40px;}
+.selt1,.selt2,.selt3{float:left;width:235px;height:38px;margin-right:30px;background:#FFF;}
+.selt1 img,.selt2 img,.selt3 img{float:right;margin-top:10px;margin-right:5px;}
+.section4 .selt .selt2{position:relative;}
+.section4 .selt .selt2 .other{position:absolute;width:235px;height:172px;top:38px;left:0;z-index:100;}
+.section4 .selt .selt2 .other ul li{width:205px;height:27px;background:#e3e3e4;padding-left:30px;line-height:27px;font-size:12px;color:#8b8381;}
+.section4 .selt .selt2 .other ul li:nth-child(1){background:#be4e48;color:#FFF;}
+.section4 .selt .selt2 .other ul li:hover{background:#be4e48;color:#FFF;}
+.section4 .selt .selt4{float:left;width:235px;height:38px;background:#be4e48;font-size:14px;color:#FFF;text-align:center;line-height:38px;}
+
+.section5{width:100%;height:506px;min-width:1280px;padding-top:100px;background:#f7f7f7;}
+.section5 .sec5-con{width:999px;height:412px;margin:0 auto;}
+.section5 .sec5-con ul li{float:left;margin-right:30px;}
+.section5 .sec5-con ul li span{display:block;text-align:center;}
+.section5 .sec5-con ul li span:nth-child(2){font-size:16px;height:26px;line-height:26px;}
+.section5 .sec5-con ul li span:nth-child(3){color:#968e8a;height:26px;line-height:26px;}
+.section5 .sec5-con ul li:nth-child(2) span:nth-child(1){font-size:16px;letter-spacing:35px;font-weight:600;}/*为什么span加了letter-spacing以后内容不居中了*/
+.section5 .sec5-con ul li:nth-child(2) span:nth-child(2){color:#968e8a;height:26px;line-height:26px;font-size:12px;}
+
+.section6{width:100%;height:568px;min-width:1280px;}
+.section6 .left{width:66.5%;height:438px;position:relative;background:url(../images/task_1_7_1_48.png) no-repeat 0 0;background-size:cover;float:left;padding-top:130px;}
+.section6 .left p{color:#FFF;text-align:center;}
+.section6 .left p:nth-child(1){font-size:50px;line-height:50px;}
+.section6 .left p:nth-child(2){font-size:158px;line-height:150px;}
+.section6 .left p:nth-child(3),.section6 .left p:nth-child(4){font-size:21px;line-height:50px;}
+.section6 .left .trian{width:30px;height:30px;background:#FFF;position:absolute;top:48%;right:0;transform:rotate(45deg) translate(20px);}
+.section6 .right{width:33.5%;height:410px;float:right;padding-top:158px;}
+.section6 .right .biaoti{height:31px;text-align:center;margin-bottom:25px;}
+.section6 .right .biaoti span{font-size:24px;font-family:"黑体";font-weight:500;}
+.section6 .right .biaoti span:nth-child(2){color:#F00;}
+.section6 .right p{width:288px;height:200px;line-height:30px;margin:0 auto;font-family:"宋体";color:#aaaaaa;}
+.section6 .right .more{width:107px;height:34px;margin:0 auto;border:1px solid #F00;color:#F00;text-align:center;line-height:34px;cursor:pointer;}
+.section6 .right .dian{width:71px;height:56px;margin:0 auto;padding-top:40px;}
+.section6 .right .dian div{width:12px;height:12px;border-radius:12px;border:1px solid #d7d8d8;float:left;margin:0px 4px;}
+.section6 .right .dian div:nth-child(1){background:#929292;}
+.section6 .right .dian div:hover{background:#929292;cursor:pointer;}
+
+.section7{width:100%;height:521px;min-width:1280px;}
+.s1,.s2,.s3{width:33.3%;height:356px;float:left;}
+.section7 .s1{background:#e74f4d;padding-top:165px;}
+.section7 .s1 p{color:#FFF;font-size:21px;font-family:"黑体";height:30px;line-height:30px;text-align:center;}
+.section7 .s1 p:nth-child(3){font-size:26px;font-weight:bolder;}
+.section7 .s1 .more1{width:172px;height:43px;margin:0 auto;}
+.section7 .s2{padding-top:165px;}
+.section7 .s3{background:url(../images/task_1_7_1_51.png) no-repeat;background-size:cover;height:521px;}
+
+.section8{width:100%;height:640px;min-width:1280px;padding-top:110px;}
+
+
+.section9{width:100%;height:416px;min-width:1280px;}
+
+
